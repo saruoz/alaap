@@ -1,0 +1,440 @@
+body{
+	   /* To reduce flicker/white flash while navigating pages for chrome browser*/
+	   background-color:#2E2727 !important;
+	   background: url("../images/dark.png") repeat;
+}
+		* {
+			font-family: Arial, Verdana, sans-serif;
+			color: #000;
+			text-align: center;
+			font-size:16px;
+		}
+		
+		#nav, #ComingSoon, .article, #footer,.quick,#about,#past,#coming,#T,#contact,#past_events,#upcoming,#remarks, #artistcomments,#membership,#form {
+			background-color: #ff9933; /* orange color */
+			margin-top: 10px;
+			padding: 5px 0px 5px 0px;
+		}
+		
+		
+		#header h1{
+			color:white;
+			font-family:times;
+			font-style:italic;
+			font-size:30px;
+		}
+		.sc{
+			color:red;
+			font-weight:bold;
+		}
+		
+		#ComingSoon {
+			height: 30px;
+		}
+		
+		.article,#past,#coming,#contact,#past_events,#upcoming,#remarks,#form{
+			height: 350px;
+			
+		}
+		
+		.article p{
+			line-height:1.3em;
+			padding:10px;
+			text-align:;
+		}
+		
+		.article a {
+		 	text-decoration:none;
+		}
+		
+		#about, #artistcomments{
+			height: 350px;
+			overflow:auto;
+			line-height:1.3em;
+		}
+		#about p {
+			padding:0 30px 0 30px;
+			text-align:justify;
+			font-size:16px;
+		}
+		
+		/*css for past event page*/
+		#past_events{
+			height:250px;			
+		}	
+		#past_events h1{
+			text-transform:uppercase;		
+		}
+		#past_events p {
+				text-align:left;
+				font-size: 18px;
+				padding: 0 10px 10px 10px;
+		}
+		#past_events img{
+			float: right;		
+		}
+		#upcoming em{
+			font-style: italic;
+			text-transform: uppercase;		
+			color: blue;
+		}
+		.contact-names{
+			padding-left: 20px;
+			text-align: left;		
+		}
+		/*You tube icon for past and upcoming pages*/
+		
+		#past_events img.icon1{
+			float: left;
+			margin-right:5px;
+		}
+		#upcoming img.icon1{
+			float:left;
+			margin-right:5px;
+		}
+		.youTube{
+		      line-height:25px;
+		}
+		.telph{
+			padding: 20px;		
+			font-weight: bolder;
+		}
+		
+		#T{
+			height:150px;
+			overflow-x:auto;
+		}
+	
+		#T img{
+			padding: 10px 20px 0 20px;
+			float: left;
+		    
+			
+		}
+		.ph{
+			padding: 0;		
+		}
+		
+		.name{
+			text-align: left;
+		  	
+		}
+		
+		/*facebook icon*/
+		img.facebook_icon{
+			margin-right: 10px;		
+		
+		}
+		
+		/*navigation*/
+	
+		
+		li {		
+			display:inline-block;
+			padding: 5px;
+		}
+				
+		li a {
+			text-decoration:none; 
+			padding:0 5px 0 0;
+		}
+		li ul{
+		display: none;	
+	}
+	
+     #nav ul li {
+	   position:relative; 
+		list-style-type: none;
+	
+	 }	
+		
+	li:hover ul {
+			background-color:#ff9933;                    
+			 position: absolute;                          
+			display:block;
+			cursor: pointer;
+			left: ;
+			z-index: 1;
+		   min-width:150px;
+		  padding: 10px 10px 0 10px;
+	}
+	#roll li {
+		display: block;
+   	margin-left: 0;
+	}
+	 
+	 #roll a {
+		background-color:#ff9933; 
+	 }
+	
+	 li:hover li {float: none;}
+	 
+	      /* unvisited link */
+			a:link {
+				color:#000 ;
+			}
+
+			/* visited link */
+			a:visited {
+				color:#000;
+			}
+
+			/* mouse over link */
+			a:hover {
+				color:blue;
+			}
+
+			/* selected link */
+			a:focus {
+				color: white;
+			}
+			
+					/*hide menu btn for other devices*/
+		.menu_btn{
+			display: none;		
+		}
+		
+/* Tablet Portrait width to 960px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+#nav a {
+ padding-left: 20px;
+     }	
+}/*closing the tablet media*/	
+
+.menu2{
+ display: none;
+ color: white;
+}
+/* hide it from the main page*/
+.mobile-only{
+display: none;
+}
+#down{
+display: none;
+}
+/*responsive menu for mobile phones */
+
+@media only screen and (max-width: 767px) {
+	
+	                                   
+ .mobile-only{
+  display:block;
+	text-decoration: none;
+   color: white; 
+  text-align: left;
+  padding-left: 20px; 
+ }
+ li{
+display:block;
+float:left;
+width:100%; 
+background-color: #333;
+ }
+ #down{
+display: block; 
+ }
+#down img{                 //for the arrow
+float: right;
+} 
+ .menu-toggle{           /*css to hide and show menu*/ 
+display:none; 
+ }
+ .menu-slide{
+  display:block; 
+ }
+#nav{
+background-color:#333; 
+}
+#nav li{
+float: left;
+width: 97%;
+}
+ #nav ul{
+padding-left:0;
+ }
+#nav a{
+ color:white;//black;
+ text-align: left;
+ padding-left: 20px;
+ border-color:#000;
+ border-bottom-width: thin;
+ border-bottom-style: outset;
+} 
+/*for membership page*/
+#bullet li{
+background-color: #ff9933;
+width:90%;
+}
+/*for upcoming page*/
+#upcoming{
+ overflow:auto;
+}
+
+
+ul a{             /*selecting all the a for css*/
+ color: white;
+ display: block;
+ text-decoration: none;
+}
+li ul{                 // for hiding the sub menu
+		display: none;	
+	}
+ul li {               // for the sub menu
+	position:relative;  
+	list-style-type: none;
+	}
+ 
+li:hover ul {
+			background-color:#333; /*#ff9933;*/
+			position: absolute;
+			display:block;
+			cursor: pointer;
+			z-index: 1;
+		   min-width:100px;
+		  /* min-height:50px;*/
+		   padding: 10px 10px 0 10px;
+	}
+	
+#roll{
+  position:relative;
+  left:0px; 
+  width: inherit;
+ 
+}
+#roll li {
+	background-color:#333;
+	display:block;
+   /*margin-left: 0;*/
+   width: 100%;
+   
+	 }
+#roll a {
+		text-align:left;
+		background-color:#333; 
+		/*left:0; */
+		
+	}
+#roll ul{
+width:97%; 
+}
+/*for the sub menu*/
+.hide{
+display: none;
+}
+.show{
+display: block;
+
+}
+}/*End of mobile media query*/
+ 
+ 
+	 
+	 
+			/*membership page style*/
+				
+		li.bulletPoint1 {
+			margin: 5px;
+			display: list-item;
+			text-align: left;
+			list-style-type: disc;
+		}
+		
+	   #membeshipDetails1{		
+		   height: auto;
+		}
+		#membershipDetails2{
+         float:left;
+     }
+		
+		
+		/*for about page*/
+.praise{
+	padding: 0 10px 0 10px;
+   color: ;
+   font-size: ;
+   font-family: ;
+}
+				
+		#footer {
+			height: 60px;
+			text-align:right !important;			
+		}
+		#footer_nav {
+			height: 30px;
+			text-align:right !important;
+			background-color: #ff9933; /* orange color */
+			margin-top: 10px;
+			padding: 0px 0px 15px 0px;
+			font-size: 12px;
+			position:relative;
+		}
+		
+		.img{
+			max-width: 100%;
+			height: auto;		
+		}
+		
+		#footer p{
+			font-size: 10px;
+			text-align:center;
+			color:black;
+			padding:0 10px 0 0;
+			position:relative;
+		}
+		
+		
+		/*for the scroll*/
+						
+	.scroll-left {
+	height: 28px;	
+	overflow: hidden;
+	position: relative;
+	color: black;
+	 
+	}
+	
+	.scroll-left p {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 25px;
+	/*text-align: center;*/
+	
+	/* Starting position */
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);	
+	transform:translateX(100%);
+	
+	/* Apply animation to this element */	
+	-moz-animation: scroll-left 20s linear infinite;
+	-webkit-animation: scroll-left 20s linear infinite;
+	animation: scroll-left 35s linear infinite;
+	}
+	
+	/* Move it (define the animation) */
+	@-moz-keyframes scroll-left {
+	0%   { -moz-transform: translateX(100%); }
+	100% { -moz-transform: translateX(-100%); }
+	}
+	@-webkit-keyframes scroll-left {
+	0%   { -webkit-transform: translateX(100%); }
+	100% { -webkit-transform: translateX(-100%); }
+	}
+	@keyframes scroll-left {
+	0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+			
+		/* css for slideshow on home page*/
+			.fadein { position:relative;} /*width:50%; height:30%; }*/
+			.fadein img{ position:absolute; left:0; top:0; }
